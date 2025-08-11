@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goit-js-hw-03</title>
+</head>
+<style>
+    /* Sayfanın genel görünümünü iyileştirmek için temel stiller */
+    body {
+        background-color: #f0f2f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        /* Animasyonu h1 elementine uyguluyoruz */
+        animation: glow 3s ease-in-out infinite;
+       text-transform: uppercase;
+
+    }
+
+    /* "glow" adında bir animasyon kuralı tanımlıyoruz */
+    @keyframes glow {
+        0% {
+            color: #2c3e50; /* Başlangıç rengi */
+            text-shadow: none; /* Başlangıçta gölge yok */
+        }
+        50% {
+            color: #3498db; /* Animasyonun ortasındaki renk */
+            text-shadow: 0 0 15px #3498db; /* Parlama efekti için gölge */
+        }
+        100% {
+            color: #2c3e50; /* Bitiş rengi (başa dönmek için) */
+            text-shadow: none; /* Bitişte gölge yok */
+        }
+    }
+</style>
+<body>
+    <h1>goit-js-hw-03</h1>
+    <script src="./js/task-1.js"></script>
+    <script src="./js/task-2.js"></script>
+    <script src="./js/task-3.js"></script>
+</body>
+</html>
